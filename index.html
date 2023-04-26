@@ -6,23 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero">
-        <img src="images/homepage.jpeg" width="100%">
-        <nav> 
-          <img src="images/logo.png" class ="logo" width="12%">
-          <h1>Home</h1>
-          <h1>Portfolio</h1>
-          <h1>About</h1>
-          <h1>Resume</h1>
-          <h1>Contact</h1>
-        </nav>
-        <div class="hero-text">
-          <h1>Hi, Im Joshua</h1>
-          <h2>Web Developer & Basketball Enthusiast</h2>
-        </div>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" class="logo"></a>
+      <div class="nav-links" id="nav-links">
+        <span class="material-symbols-outlined" onclick="hideMenu()">
+          close
+          </span>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
+      <span class="material-symbols-outlined" onclick="showMenu()">
+        menu
+        </span>
+    </nav>
+    <div class="text-box">
+      <h1>Hi, Im Joshua</h1>
+      <p>Web Developer & Basketball Enthusiast</p>
+      <a href="" class="hero-btn">Learn More</a>
+    </div>
+  </section>
+  <section class="details">
+    <h1>Overview</h1>
+    <p>Welcome to my own personal portfolio website creation. Throughout this site, you can find anything related to me as well as some of the work that we do at CART (Center for Advanced Research and Technology). Using HTML CSS and JavaScript over the course of our time at Cart has resulted in the skills shown on this website. Greetings and best wishes for your browsing.</p>
+  </section>
+  <section class="page-links" id="page-links">
+      <div class="portfolio-box">
+
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
