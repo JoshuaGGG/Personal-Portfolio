@@ -176,10 +176,16 @@ p{
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
 }
+/* .button-container{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+} */
 .button-container{
-    background: #2779A7;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    border-radius: 20%;
+    padding-top: 1px;
+    padding-bottom: 1px;
     display: flex;
     justify-content: center;
     flex: wrap;
@@ -188,36 +194,37 @@ p{
 }
 .button a{
     color: #FEFEFE;
-    padding: 150px;
+    padding: 80px;
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
 }
 .button2 a{
     color: #FEFEFE;
-    padding: 150px;
+    padding: 80px;
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
 }
 .button3 a{
     color: #FEFEFE;
-    padding: 150px;
+    padding: 80px;
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
 }
 .button4 a{
     color: #FEFEFE;
-    padding: 150px;
+    padding: 80px;
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
 }
 .button{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url(images/portfolio.jpg);
-    width: 43%;
+    width:90%;
+    height: 30vh;
     display: flex;
     justify-content: center;
     margin: 30px;
-    border-radius: 60px;
-    font-size: 30px;
+    border-radius: 20px;
+    font-size: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -225,12 +232,13 @@ p{
 }
 .button2{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url(images/about.PNG);
-    width: 43%;
+    width:90%;
+    height: 30vh;
     display: flex;
     justify-content: center;
     margin: 30px;
-    border-radius: 60px;
-    font-size: 30px;
+    border-radius: 20px;
+    font-size: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -238,12 +246,13 @@ p{
 }
 .button3{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url(images/resume.jpg);
-    width: 43%;
+    width:90%;
+    height: 30vh;
     display: flex;
     justify-content: center;
     margin: 30px;
-    border-radius: 60px;
-    font-size: 30px;
+    border-radius: 20px;
+    font-size: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -251,26 +260,99 @@ p{
 }
 .button4{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url(images/contact.jpg);
-    width: 43%;
+    width:90%;
+    height: 30vh;
     display: flex;
     justify-content: center;
     margin: 30px;
-    border-radius: 60px;
-    font-size: 30px;
+    border-radius: 20px;
+    font-size: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-footer{
+.white-container {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #FEFEFE;
+    border-radius: 5%;
+    width: 20%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  .white-container:hover {
+    transform: rotateY(180deg);
+  }
+  .button-container p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+ footer{
     color: #FEFEFE;
-    background-color: #262626;
     width: 100%;
-    height: 10vh;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    bottom: 0;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+    background:linear-gradient(to right, #262626, #262626)
+ }
+ .propic{
+    width: 300px;
+    margin-bottom: 30px;
+    background:#0c0c0c;
+    border-radius: 500px;
+    box-shadow: 0 0 10px rgb(39, 121, 167);
+ }
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
-footer a{
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #FEFEFE;
+    margin: 20px 0;
+}
+ul li{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a {
     text-decoration: none;
     color: #FEFEFE;
-    font-family: 'Poppins', sans-serif;
 }
+hr{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #2779A7;
+    margin-bottom: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+
+  
 

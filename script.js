@@ -22,3 +22,14 @@ logo.addEventListener("mouseenter", () =>{
 logo.addEventListener("animationend", () =>{
     logo.classList.remove("bounce");
 });
+
+const buttonContainers = document.querySelectorAll('.white-container');
+buttonContainers.forEach(container => {
+  container.addEventListener('mouseenter', () => {
+    container.classList.add('rotate');
+  });
+
+  container.addEventListener('mouseleave', () => {
+    container.classList.remove('rotate');
+  });
+});
