@@ -18,7 +18,40 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+.active, .nav-links li:hover{
+    border-radius: 3px;
+}
+.sub-nav1{
+    display: none;
+}
+.nav-links ul li:hover .sub-nav1{
+    display: block;
+    position: absolute;
+    background-color: rgb(#2779A7);
+    margin-top: 15px;
+    margin-left: -15px;
 
+}
+.nav-links ul li:hover .sub-nav1 ul{
+    display: block;
+    margin: 10px;
+
+}
+.nav-links ul li:hover .sub-nav1 ul li{
+   width: 150px;
+   padding: 10px;
+   border-bottom: 1px dotted #FEFEFE;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.nav-links ul li:hover .sub-nav1 ul li:last-child{
+    border-bottom: none;
+}
+.nav-links ul li:hover .sub-nav1 ul li a:hover{
+   color: #2779A7;
+
+}
 .logo{
 width: 120px;
 transition: all 0.3s ease-in-out;
