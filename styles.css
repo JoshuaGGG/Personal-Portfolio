@@ -1,3 +1,4 @@
+/* Home Page styling Beginning*/
 *{
     margin: 0;
     padding:0;
@@ -209,12 +210,7 @@ p{
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
 }
-/* .button-container{
-    display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem;
-} */
+
 .button-container{
     border-radius: 20%;
     padding-top: 1px;
@@ -227,32 +223,32 @@ p{
 }
 .button a{
     color: #FEFEFE;
-    padding: 80px;
+    padding: 100px;
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
 }
 .button2 a{
     color: #FEFEFE;
-    padding: 80px;
+    padding: 100px;
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
 }
 .button3 a{
     color: #FEFEFE;
-    padding: 80px;
+    padding: 100px;
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
 }
 .button4 a{
     color: #FEFEFE;
-    padding: 80px;
+    padding: 100px;
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
 }
 .button{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url(images/portfolio.jpg);
     width:90%;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     margin: 30px;
@@ -266,7 +262,7 @@ p{
 .button2{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url(images/about.PNG);
     width:90%;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     margin: 30px;
@@ -280,7 +276,7 @@ p{
 .button3{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url(images/resume.jpg);
     width:90%;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     margin: 30px;
@@ -294,7 +290,7 @@ p{
 .button4{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url(images/contact.jpg);
     width:90%;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     margin: 30px;
@@ -310,13 +306,13 @@ p{
     background-color: #FEFEFE;
     border-radius: 5%;
     width: 20%;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-bottom: 2rem;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 1s ease-in-out;
     transform-style: preserve-3d;
     backface-visibility: hidden;
   }
@@ -369,13 +365,13 @@ p{
     margin: 20px 0;
 }
 ul li{
-    font-family: 'Poppins', sans-serif;
     list-style: none;
     margin-bottom: 12px;
 }
 ul li a {
     text-decoration: none;
     color: #FEFEFE;
+    font-family: 'Poppins', sans-serif;
 }
 hr{
     width: 100%;
@@ -386,6 +382,122 @@ hr{
 .copyright{
     text-align: center;
 }
+/* home page styling END*/
 
-  
+/* Portfolio styling Beginning */
+.header2{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(23, 24, 26, 0.7),rgba(20, 21, 21, 0.7)),url(images/portfolio.jpg);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.slideshow-container{
+    max-width: 1000px;
+    background-color: #2779A7;
+    position: relative;
+    margin: auto;
+}
+.slides{
+    display: none;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #262626;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease ;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.9);
+}
+.text{
+    color: #FEFEFE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.number-text{
+    color: #FEFEFE;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #2779A7;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+ .dot:hover{
+    background-color: #FEFEFE;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
 
+/* Portfolio styling End */
+
+/* About Styling Beginning */
+.header3{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(23, 24, 26, 0.7),rgba(20, 21, 21, 0.7)),url(images/about.PNG);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* About Styling End*/
+
+/* Resume Styling Beginning */
+.header4{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(23, 24, 26, 0.7),rgba(20, 21, 21, 0.7)),url(images/resume.jpg);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* Resume Styling End*/
+
+/* Contact Styling Beginning*/
+.header5{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(23, 24, 26, 0.7),rgba(20, 21, 21, 0.7)),url(images/contact.jpg);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* Contact Styling End*/
