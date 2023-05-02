@@ -409,6 +409,55 @@ hr{
     background-size: cover;
     position: relative;
 }
+.about-intro{
+    margin: 50px;
+    align-items: center;
+    justify-content:space-evenly;
+    
+}
+.about-intro img{
+    width: 50%;
+    box-shadow: 0 0 10px rgba(3, 146, 248, 0.5);
+}
+.about-intro h2{
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 5px 10px;
+    font-size: 40px;
+}
+.about-intro p{
+    font-size:20px;
+}
+
+.hobbies{
+    background-color: #FEFEFE;
+    box-shadow: 0 0 10px rgba(31, 32, 32, 0.5);
+    margin: 50px;
+    font-size: 30px;
+    font-family: 'Red Hat Display', sans-serif;
+    justify-content: space-around;
+
+}
+.hobbies h2{
+    padding: 40px;
+}
+.hobbies img{
+    width: 40%;
+
+}
+.postsecondaryplan{
+    background-color: #FEFEFE;
+    box-shadow: 0 0 10px rgba(31, 32, 32, 0.5);
+    margin: 50px;
+    height: 40vh;
+}
+.year-content{
+    margin: 20px;
+}
+.year-content h2{
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 30px 800px;
+    font-size: 40px;
+}
 
 /* About Styling End*/
 
@@ -421,6 +470,22 @@ hr{
     background-position: center;
     background-size: cover;
     position: relative;
+}
+button{
+   text-decoration: none;
+   background: transparent;
+   border: 2px solid #FEFEFE;
+   color: #262626;
+   padding: 10px 30px;
+   font-size: 20px;
+   cursor:pointer;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.resume{
+ 
+}
+.resume-container{
+    
 }
 /* Resume Styling End*/
 
