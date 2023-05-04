@@ -565,20 +565,35 @@ hr{
 }
 
 .portolio-projects{
-   display: flex;
-   flex-wrap: wrap;
+    
+   justify-content: center;
+   align-items: center;
 }
 .project-container{
-    
+    background: #FEFEFE;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    width: 50%;
+    height: 40vh;
+    margin: 0 auto ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .project-container h2{
     font-family: 'Red Hat Display', sans-serif; 
 }
+.project-container p{
+    font-weight: 600;
+    margin: 0 10px;
+}
 .all-project{
-    
-
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 .project-container img{
+    width:100%;
     
 }
 .project-container button{
@@ -657,9 +672,21 @@ hr{
     background-size: cover;
     position: relative;
 }
-
+.letter{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.letter button{
+    margin:20px;
+    background: #FEFEFE;
+    
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 .btn-resume{
-    margin:0 auto;
+    
     text-decoration: none;
     background: transparent;
     border: 2px solid #FEFEFE;
@@ -695,9 +722,34 @@ hr{
     position: relative;
 }
 .contact-details{
-   
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.button-row{
+.row-button{
+    background: linear-gradient(to right, rgb(67,124,205), rgb(69, 214, 202));
+    justify-content: center;
+    align-items: center;
+}
+.row-button button{
+    justify-content: center;
+    align-items: center;
+    background-color: #FEFEFE;
+    box-shadow: 0 0 10px rgba(31, 32, 32, 0.5);
+    width: 200px;
+    margin: 15px;
+    font-size: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    justify-content: space-around;
+}
+.rowp{
     
 }
+form{
+    
+    
+}
+
 /* Contact Styling End*/
