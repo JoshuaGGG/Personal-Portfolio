@@ -23,16 +23,7 @@ logo.addEventListener("animationend", () =>{
     logo.classList.remove("bounce");
 });
 
-const buttonContainers = document.querySelectorAll('.white-container');
-buttonContainers.forEach(container => {
-  container.addEventListener('mouseenter', () => {
-    container.classList.add('rotate');
-  });
 
-  container.addEventListener('mouseleave', () => {
-    container.classList.remove('rotate');
-  });
-});
 const slides = document.querySelectorAll('.slide');
 const btns = document.querySelectorAll('.btn');
 let currentSlide =1;
@@ -83,5 +74,6 @@ const repeat = function (activeClass){
   repeater();
 }
 repeat();
+
 
 
