@@ -122,8 +122,11 @@ transition: all 0.3s ease-in-out;
 .text-box{
     color: #FEFEFE;
     position: absolute;
-    margin: 0 100px;
+    margin: 0 150px;
     bottom: 8%;
+}
+.hero-text{
+    font-family: 'poppins', sans-serif;
 }
 .text-box h1{
     font-size: 190px;
@@ -225,9 +228,6 @@ span.material-symbols-outlined{
     padding: 5px 10px;
     font-size: 15px;
     }
-}
-canvas{
-    background-color:#EFEFEF;
 }
 .details{
     width: 80%;
@@ -657,27 +657,30 @@ hr{
     background-size: cover;
     position: relative;
 }
-button{
-   text-decoration: none;
-   background: transparent;
-   border: 2px solid #FEFEFE;
-   color: #262626;
-   padding: 10px 30px;
-   font-size: 20px;
-   cursor:pointer;
-   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
+
 .btn-resume{
-    margin: 50px;
+    margin:0 auto;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #FEFEFE;
+    color: #262626;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor:pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .resume{
  
 }
 .resume-container{
     background: #FEFEFE;
-    width: 50%;
-    margin: 50px;
+    width: 40%;
+    margin: 0 auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 100px
+}
+.resume-container h1 h2 h3 h4{
+    font-family: 'Red Hat Display', sans-serif;
 }
 /* Resume Styling End*/
 
@@ -690,5 +693,11 @@ button{
     background-position: center;
     background-size: cover;
     position: relative;
+}
+.contact-details{
+   
+}
+.button-row{
+    
 }
 /* Contact Styling End*/
