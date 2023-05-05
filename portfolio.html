@@ -8,6 +8,7 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -63,42 +64,21 @@
     </div>
   </section>
   <section class="img-slider">
-    <div class="slide active">
-      <img src="images/delvehomes.PNG" alt="">
-      <div class="information">
-        <h2>Delvehomes</h2>
-        <p>Learn all about the bee shaped commercially advertised website</p>
-      </div>
-    </div>
-    <div class="slide">
-      <img src="images/cybersecurity.PNG" alt="">
-      <div class="information">
-        <h2>Cybersecurity</h2>
-        <p>Take a deep dive on to the cybersecurity realm of threats</p>
-      </div>
-    </div>
-    <div class="slide">
-      <img src="images/budget calc.PNG" alt="">
-      <div class="information">
-        <h2>EECU Budget Calculator</h2>
-        <p>Calculate your own budget in real time </p>
-      </div>
-    </div>
-    <div class="slide">
-      <img src="images/loteria.PNG" alt="">
-      <div class="information">
-        <h2>Loteria </h2>
-        <p>Lead on with the traditional mexican boardgame</p>
-      </div>
-      <div class="navigation">
-      <div class="btn active"></div>
-      <div class="btn"></div>
-      <div class="btn"></div>
-      <div class="btn"></div>
+    <div class="slide-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/delvehomes.PNG" alt=""></div>
+          <div class="swiper-slide"><img src="images/cybersecurity.PNG" alt=""></div>
+          <div class="swiper-slide"><img src="images/budget calc.PNG" alt=""></div>
+          <div class="swiper-slide"><img src="images/loteria.PNG" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
   </section>
-  <section class="portfolio-projects">
+  <!-- <section class="portfolio-projects">
     <div class="all-project">
       <div class="project-container">
         <img src="images/delvehomes.PNG" alt="">
@@ -125,7 +105,7 @@
         <button>Learn More</button>
       </div>
     </div>
-  </section>
+  </section> -->
   <footer>
     <div class="row">
       <div class="col">
@@ -153,6 +133,7 @@
     <hr>
     <p class="copyright">Joshua Guzman © 2023</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
