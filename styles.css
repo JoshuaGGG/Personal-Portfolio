@@ -22,6 +22,9 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+nav, .details h1, .details p{
+    font-weight: normal;
+}
 .active, .nav-links li:hover{
     border-radius: 3px;
 }
@@ -54,8 +57,8 @@ nav{
 }
 .nav-links ul li:hover .sub-nav1 ul li a:hover{
    color: #2779A7;
-
 }
+
 .logo{
 width: 120px;
 transition: all 0.3s ease-in-out;
@@ -166,6 +169,12 @@ transition: all 0.3s ease-in-out;
     display: block;
     
 }
+.icons a{
+    text-decoration: none;
+}
+.icons span{
+    font-size: 2em;
+}
 .icons a span{
     text-decoration: none;
     color: #FEFEFE;
@@ -236,6 +245,7 @@ span.material-symbols-outlined{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 h1{
     font-family: 'Red Hat Display', sans-serif;
     font-size: 36px;
@@ -244,7 +254,6 @@ h1{
 p{
     font-size: 14px;
     line-height: 22px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .button-container{
@@ -518,8 +527,11 @@ hr{
     font-family: 'Red Hat Display', sans-serif;
   }
   .white-container p{
+    color:#262626;
     padding: 10px;
-    font-weight: 600;
+    font-size: 15px;
+    font-family: 'poppins', sans-serif;
+    
   }
   .probtn{
     text-decoration:none;
@@ -531,6 +543,70 @@ hr{
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
+  .probtn a{
+    text-decoration: none;
+    color: #262626;
+  }
+  .probtn:link, .probtn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+  }
+  .probtn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .probtn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .probtn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.probtn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.probtn-white::after {
+    background-color: #fff;
+}
+
+.probtn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.probtn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
   
 /* Portfolio styling End */
 
@@ -545,54 +621,169 @@ hr{
     position: relative;
 }
 .about-intro{
-    margin: 50px;
+    background:#FEFEFE;
+    width:70%;
+    margin: 50px auto;
+    border-radius : 39px 39px 39px 39px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content:space-evenly;
+    gap: 2rem;
+
 }
-.about-intro img{
+.icon-row{
+    text-align: center;
+}
+.about-icons i{
+    font-size: 50px;
+    padding: 20px;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-img img{
+    padding: 20px;
+    width: 25vw;
+    border-radius: 37px 37px 37px 37px;
+}
+.about-heading{
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.about-content p{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    width: 90%;
+}
+.about-btn{
+    margin-top: 20px;
+    text-decoration: none;
+    background: #FEFEFE;
+    font-family: 'Red Hat Display', sans-serif;
+    background: transparent;
+    border: 2px solid #FEFEFE;
+    color: #262626;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px 0;
+  }
+
+  .hobby {
+    width: 300px;
+    height: 85vh;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .hobby:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  .hobby img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .hobby h3 {
+    font-size: 28px;
+    font-family: "Red Hat display", "sans-serif";
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .hobby p {
+    font-family: "poppins", "sans-serif";
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  .postsecondaryplan{
+    background: #FEFEFE;
+    width: 70%;
+    margin: 50px auto;
+    border-radius: 39px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .postsecondaryplan h2 {
+    font-family: "Red Hat display", "sans-serif";
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .postsecondary-content {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .postsecondary-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    font-family: "poppins", "sans-serif";
+    font-weight: 700;
+
+  }
+
+  .certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .certificate {
+    width: 15%;
+    height: 15vh;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourimg{
     width: 50%;
-    box-shadow: 0 0 10px rgba(3, 146, 248, 0.5);
-}
-.about-intro h2{
-    font-family: 'Red Hat Display', sans-serif;
-    padding: 5px 10px;
-    font-size: 40px;
-}
-.about-intro p{
-    font-size:20px;
-}
-
-.hobbies{
-    background-color: #FEFEFE;
-    box-shadow: 0 0 10px rgba(31, 32, 32, 0.5);
-    margin: 50px;
-    font-size: 30px;
-    font-family: 'Red Hat Display', sans-serif;
-    justify-content: space-around;
-
-}
-.hobbies h2{
-    padding: 40px;
-}
-.hobbies img{
-    width: 40%;
-
-}
-.postsecondaryplan{
-    background-color: #FEFEFE;
-    box-shadow: 0 0 10px rgba(31, 32, 32, 0.5);
-    margin: 50px;
-    height: 40vh;
-}
-.year-content{
-    margin: 20px;
-}
-.year-content h2{
-    font-family: 'Red Hat Display', sans-serif;
-    padding: 30px 800px;
-    font-size: 40px;
-}
-
+    height:40vh;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .certificate embed {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .certificate-description p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    font-family: "poppins", "sans-serif";
+    font-weight: 700;
+  }
 /* About Styling End*/
 
 /* Resume Styling Beginning */
@@ -606,26 +797,79 @@ hr{
     position: relative;
 }
 
-.btn-resume{
-    margin:0 auto;
-    text-decoration: none;
-    background: transparent;
-    border: 2px solid #FEFEFE;
-    color: #262626;
-    padding: 10px 30px;
-    font-size: 20px;
-    cursor:pointer;
+.btn-resume {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.resume{
- 
-}
+    color: white;
+    font-size: 20px;
+    padding: 20px 50px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .btn-resume a{
+    text-decoration: none;
+    color: white;
+  }
+  .btn-resume:hover{
+    background: #2779A7;
+  }
+.btn-rec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: white;
+    font-size: 20px;
+    padding: 20px 50px;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+  .btn-rec a{
+    text-decoration: none;
+    color: white;
+  }
+  .btn-rec:hover{
+    background: #2779A7;
+  }
+  .rec-container {
+    width: 90%;
+    height: 100vh;
+    border: 1px solid #ccc;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+  .rec-container embed {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  .resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 .resume-container{
     background: #FEFEFE;
-    width: 40%;
-    margin: 0 auto;
+    width: 50%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    padding: 100px
+    padding: 100px;
 }
 .resume-container h1 h2 h3 h4{
     font-family: 'Red Hat Display', sans-serif;
@@ -642,10 +886,83 @@ hr{
     background-size: cover;
     position: relative;
 }
-.contact-details{
-   
+form{
+    max-width: 550px;
+    width: 90%;
+    background:#FEFEFE;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin:17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
-.button-row{
-    
+.contact-h1{
+    margin: 0;
+    text-align: center;
+}
+label{
+    display: block;
+    margin: 20px 0;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+input[type="text"]:focus, textarea:focus{
+    border-bottom: 1px solid rgb(69, 214, 202);
+}
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgb(69, 214, 202);
+}
+.center{
+    text-align: center;
+}
+input[type="submit"]{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgb(67,124,205), rgb(69, 214, 202));
+    color: #FEFEFE;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.error{
+    color: red;
+}
+.error-border{
+    border-bottom: 1px solid red;
+}
+#success{
+    color: green;
+}
+.row-button{
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.row-button button{
+    background-color: #FEFEFE;
+    font-size: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-family: 'Red Hat Display', sans-serif;
+    width: 280px;
+    padding: 10px;
+}
+.row-p{
+    margin: 0 auto;
+    width: 70%;
+    font-size: 25px;
+    line-height: 40px;
+    font-family: 'Red Hat Display', sans-serif;
 }
 /* Contact Styling End*/

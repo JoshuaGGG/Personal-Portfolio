@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/3629eff256.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
@@ -59,28 +60,44 @@
     <div class="text-box">
       <h1>Contact</h1>
       <p>Ways to get ahold of me</p>
-      <a href="" class="hero-btn">Learn More</a>
     </div>
   </section>
   <section class="contact-details">
-    <div class="row-button"><button>Linkedln</button>
-      <button>Gmail</button>
-      <button>Phone</button>
-      <button>Other</button>
+    <div class="row-button">
+      <div class="linkedin">
+        <button><i class="fa-brands fa-linkedin" style="color: #2779a7;"></i>Linkedln</button>
+      </div>
+     <div class="mail">
+      <button><i class="fa-solid fa-envelope" style="color: #2779a7;"></i>Gmail</button>
+     </div>
+      <div class="phone">
+        <button><i class="fa-solid fa-phone" style="color: #2779a7;"></i>Phone</button>
+      </div>
     </div>
-    <p>Thank you so much for taking the time out of your day to browse my website. It was a wonderful opportunity to share some of my work and ideas through this creation. I hope that you find some of this information useful to some degree and that you had a warm experience. You are more than welcome to share any feedback or suggestions through the contact form or by my contact info. Once again, thank you for your attention and for taking a view at my website.</p>
+    <p class="row-p">Thank you so much for taking the time out of your day to browse my website. It was a wonderful opportunity to share some of my work and ideas through this creation. I hope that you find some of this information useful to some degree and that you had a warm experience. You are more than welcome to share any feedback or suggestions through the contact form or by my contact info. Once again, thank you for your attention and for taking a view at my website.</p>
   </section>
-  <form action="">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="subject">Subject:</label>
-    <input type="text" id="subject" name="subject" required>
-    <label for="message">Message:</label>
-    <textarea name="message" id="message" required></textarea>
-    <button type="submit">Submit</button>
-  </form>
+  <div id="overlay">
+    <form onsubmit="event.preventDefault(); validateForm()">
+      <h1 class="contact-h1">Contact</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your Name">
+      <small class="error"></small>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Your email">
+      <small class="error"></small>
+
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Your message" rows="6"></textarea>
+      <small class="error"></small>
+
+      <div class="center">
+        <input type="submit" value="Send Message">
+        <p id="success"></p>
+      </div>
+    </form>
+  </div>
+  
   <footer>
     <div class="row">
       <div class="col">
