@@ -108,6 +108,7 @@ transition: all 0.3s ease-in-out;
 .nav-links ul li a{
     color: #FEFEFE;
     text-decoration: none;
+    font-weight: 700;
     font-size: 20px;
 }
 .nav-links ul li::after{
@@ -413,6 +414,7 @@ ul li{
 }
 ul li a {
     text-decoration: none;
+    font-weight: 600;
     color: #FEFEFE;
     font-family: 'Poppins', sans-serif;
 }
@@ -511,7 +513,7 @@ hr{
     color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-.white-container {
+.portfolio-container {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: #FEFEFE;
     border-radius: 5%;
@@ -523,10 +525,11 @@ hr{
     text-align: center;
     margin-bottom: 2rem;
   }
-  .white-container h2{
+  .portfolio-container h2{
     font-family: 'Red Hat Display', sans-serif;
   }
-  .white-container p{
+  .portfolio-container p{
+    font-weight: 700;
     color:#262626;
     padding: 10px;
     font-size: 15px;
@@ -569,22 +572,6 @@ hr{
     color: #777;
 }
 
-.probtn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-
-.probtn-white::after {
-    background-color: #fff;
-}
 
 .probtn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
@@ -610,6 +597,17 @@ hr{
   
 /* Portfolio styling End */
 
+/* Writings styling Beginning */
+ .header6{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(23, 24, 26, 0.7),rgba(20, 21, 21, 0.7)),url(images/writing.jpg);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+/* writing styling end */
 /* About Styling Beginning */
 .header3{
     min-height: 100vh;
@@ -686,7 +684,7 @@ hr{
 
   .hobby {
     width: 300px;
-    height: 85vh;
+    height: 65vh;
     padding: 20px;
     background-color: #f8f8f8;
     border-radius: 10px;
@@ -757,8 +755,8 @@ hr{
   }
   
   .certificate {
-    width: 15%;
-    height: 15vh;
+    width: 20%;
+    height: 20vh;
     margin: 1rem;
     border: 1px solid #ccc;
     display: flex;
@@ -818,6 +816,22 @@ hr{
   .btn-resume:hover{
     background: #2779A7;
   }
+  .resume-container h3,h4{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+  }
+  .resume-container li, p {
+    font-family: 'poppins', sans-serif;
+    font-weight: 800;
+  }
+  .res-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .res-top h1{
+   
+  }
 .btn-rec {
     display: flex;
     flex-wrap: wrap;
@@ -870,9 +884,6 @@ hr{
     width: 50%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding: 100px;
-}
-.resume-container h1 h2 h3 h4{
-    font-family: 'Red Hat Display', sans-serif;
 }
 /* Resume Styling End*/
 
@@ -964,5 +975,8 @@ input[type="submit"]{
     font-size: 25px;
     line-height: 40px;
     font-family: 'Red Hat Display', sans-serif;
+}
+.contact-icons{
+    padding: 10px;
 }
 /* Contact Styling End*/
