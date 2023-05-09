@@ -22,9 +22,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-nav, .details h1, .details p{
-    font-weight: normal;
-}
+
 .active, .nav-links li:hover{
     border-radius: 3px;
 }
@@ -60,7 +58,7 @@ nav, .details h1, .details p{
 }
 
 .logo{
-width: 120px;
+width: 130px;
 transition: all 0.3s ease-in-out;
 }
 .rotate {
@@ -96,12 +94,15 @@ transition: all 0.3s ease-in-out;
   }
 .nav-links{
     flex: 1;
-    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 8px 120px;
     position: relative;
     font-family: 'Red Hat Display', sans-serif;
 }
@@ -109,7 +110,7 @@ transition: all 0.3s ease-in-out;
     color: #FEFEFE;
     text-decoration: none;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
 }
 .nav-links ul li::after{
     content: '';
@@ -240,21 +241,20 @@ span.material-symbols-outlined{
     }
 }
 .details{
-    width: 80%;
+    width: 60%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
-h1{
+.details h1{
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 50px;
+    
 }
-p{
-    font-size: 14px;
-    line-height: 22px;
+.details p{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
 }
 
 .button-container{
@@ -366,6 +366,8 @@ p{
   .button-container p {
     margin-top: 1rem;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
   }
 
  footer{
@@ -414,7 +416,6 @@ ul li{
 }
 ul li a {
     text-decoration: none;
-    font-weight: 600;
     color: #FEFEFE;
     font-family: 'Poppins', sans-serif;
 }
@@ -809,6 +810,9 @@ hr{
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  .res-top h1{
+    font-family: 'Red Hat Display', sans-serif;
+  }
   .btn-resume a{
     text-decoration: none;
     color: white;
@@ -820,7 +824,7 @@ hr{
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
   }
-  .resume-container li, p {
+  .resume-weight{
     font-family: 'poppins', sans-serif;
     font-weight: 800;
   }
@@ -828,9 +832,6 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  }
-  .res-top h1{
-   
   }
 .btn-rec {
     display: flex;
@@ -980,3 +981,108 @@ input[type="submit"]{
     padding: 10px;
 }
 /* Contact Styling End*/
+
+
+
+/* writings styling Beginning */
+.writings {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px;
+    border: 5px solid #ccc;
+    background-color: #E9E9E9;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  
+  .writings > div:first-of-type {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  .writings embed{
+    width: 100%;
+    height: 50vh;
+  }
+  .writing-content{
+   font-size: 20px;
+   line-height: 40px;
+  }
+  /* writings end */
+
+  /* 1st semester styling */
+  .header7{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(23, 24, 26, 0.7),rgba(20, 21, 21, 0.7)),url(images/pexels-pixabay-256381.jpg);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .row{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+  }
+  
+  .item {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #FEFEFE;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .item h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .item p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .item2{
+    width: 20%;
+    height: 40vh;
+    background-color: #FEFEFE;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .item2 img{
+    display: block;
+    margin-bottom: 10px;
+  }
+  .item2 h3{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .item2 p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .header8{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(23, 24, 26, 0.7),rgba(20, 21, 21, 0.7)),url(images/pexels-lil-artsy-1111597.jpg);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}

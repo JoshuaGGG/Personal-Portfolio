@@ -90,5 +90,22 @@ function emailIsValid(email){
   return pattern.test(email);
 }
 
+const textArr = ["Joshua", "Yehoshua", "Josué", "Yoshua"];
+let count = 0;
+
+function flip() {
+  const flipContainer = document.getElementById("flip-text");
+  flipContainer.classList.remove("flip");
+  void flipContainer.offsetWidth;
+  flipContainer.setAttribute("data-text", textArr[count]);
+  count++;
+  if (count >= textArr.length) {
+    count = 0;
+  }
+  flipContainer.classList.add("flip");
+}
+
+setInterval(flip, 2000);
+
 
 
