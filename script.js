@@ -134,38 +134,6 @@ window.onload = function () {
       ],
     },
   });
-  lax.addElements(".letter", {
-    scrollY: {
-      rotateZ: [
-        ["elInY", "elCenterY", "elOutY"],
-        [-500, 0, 500],
-      ],
-      translateX: [
-        ["elInY", "elCenterY", "elOutY"],
-        [-400, 0, 400],
-      ],
-      opacity: [
-        ["elInY", "elCenterY", "elOutY"],
-        [0, 1.2, 0],
-      ],
-    },
-  });
-  lax.addElements(".resume", {
-    scrollY: {
-      rotateZ: [
-        ["elInY", "elCenterY", "elOutY"],
-        [-500, 0, 500],
-      ],
-      translateX: [
-        ["elInY", "elCenterY", "elOutY"],
-        [-1000, 0, 1000],
-      ],
-      opacity: [
-        ["elInY", "elCenterY", "elOutY"],
-        [0, 1.2, 0],
-      ],
-    },
-  });
   lax.addElements(".white-container", {
     scrollY: {
       rotateZ: [
