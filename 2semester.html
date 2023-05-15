@@ -69,7 +69,7 @@
       <p>The second project of the second semester was to make a digital boardgame using HTML, css and JavaScript. This was a team project of two people working together to finish the project. Researching what game we would make was the initial start of the project and we chose Loteria a mexican traditional bingo game. The original instructions for the game were to fill the entire 4x4 board with tokens from a card shuffled each time. There was modifications that we had to make over the original ideas in order to make it more fast paced. Modifications like expanding the board to a 5x5 and adding two more cards to the deck was the solution. Like any project a wireframe or overall design had to be made in figma. We wanted a clear and crispy layout and decided to have  the instructions on the first page and the next page to be the selection of the boards. Once you selected a board the game would start and hide all of the remaining elements. The illustrious design that we wanted was mostly included in the card images itself and the rgb keyframes that were added made it look like an actual game environment. The completion of the preparation  mean’t that the next step was to program the entirety of the website in Visual Studio Code. HTML made the overall layout or backbone of the website and CSS helped to style from the position to the colors. Most of the trouble was gaining traction in JavaScript where some of the code was not working properly because we weren’t defining a certain property or general code was missing something. We had to understand how JavaScript understands assignments and rules set for the creation of generating boards, card display and drag distribution of a token. Generating Boards involved constant for loops in order to process the randomly generated boards and setting values less than three to have similar card sets in the board.  For the card display a for loop iterated over the last index to the beginning of the index and swapped the initial index to the  upcoming randomly generated index. This was an array of a total of 55 cards with the addition of the takeaway and wildcard. The distribution of a token was definitely a challenge as we didn’t know how to make an image dragable and able to be put in front of another image. We found a whole JavaScript tutorial online of drag and drop. We had to set the generated board images as background image and the drag and drop as functions to fire the dragable elements as well as calling the event handler to make the element a valid drop target. Much was learned from this project in general programming and collaboration of the work with a classmate.</p>
     </div>
   </section>
-  <section class="row">
+  <section class="row2">
     <div class="item2">
       <img src="images/visual-removebg-preview.png" width="150">
       <h3>Visual Studio Code</h3>
@@ -123,6 +123,24 @@
     <hr>
     <p class="copyright">Joshua Guzman © 2023</p>
   </footer>
-  <script src="script.js"></script>
+  <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text">Second Semester</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">Projects</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">EECU Budget Calculator & Loteria</span>
+      </h1>
+    </div>
+  </div>
+  <div class="slider"></div>
+        <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/3629eff256.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 </body>
 </html>
